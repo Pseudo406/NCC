@@ -455,6 +455,49 @@ transport nepal, road transport bhutan bangladesh">
     .has-x-large-font-size {
       font-size: var(--wp--preset--font-size--x-large) !important;
     }
+    .slider-container {
+            width: 80%;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .slider {
+            display: inline-flex;
+            transition: transform 0.5s ease-in-out;
+            margin-left: -100px;
+        }
+
+        .review-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            height: 400px;
+            margin: 0 10px;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* .review-card.active {
+            opacity: 1;
+        } */
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rating span {
+            color: #d4af37; /* Golden color */
+        }
+
+        .rating .empty-star {
+            color: #ccc; /* Grey color for empty stars */
+        }
   </style>
   <link property="stylesheet" rel="stylesheet" id="advanced-popups-css"
     href="wp-content/plugins/advanced-popups/public/css/advanced-popups-public.css?ver=1.1.3" type="text/css"
@@ -2268,6 +2311,7 @@ transport nepal, road transport bhutan bangladesh">
       width: 100%;
       height: 714px;
     }
+    
   </style>
 </head>
 
@@ -2443,6 +2487,93 @@ transport nepal, road transport bhutan bangladesh">
       <header
         class="top_panel top_panel_custom top_panel_custom_17262 top_panel_custom_header-fullwidth-style-2 without_bg_image">
         <div data-elementor-type="cpt_layouts" data-elementor-id="17262" class="elementor elementor-17262">
+          
+          <!-- sid added -->
+
+          <style>
+            /* Media query for desktop screens */
+@media screen and (min-width: 768px) {
+  #mobile-layout {
+    display: none; /* Hide the mobile layout on desktop */
+  }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 767px) {
+  #desktop-layout {
+    display: none; /* Hide the desktop layout on mobile */
+  }
+}
+          </style>
+          
+          <table id="desktop-layout" style="width:100%;background-color: #0065b1!important; color: white!important;padding: 5px 40px 5px 40px!important; font-size: small;">
+            <tr>
+              <td style="text-align: left;width: 50%;background-color: #0065b1!important; color: white!important;padding: 5px 40px 5px 40px!important;">
+                <a href="mailto:info@national-carriers.com" style="color: inherit;">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" style="margin-bottom: -5px;">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg> info@national-carriers.com
+                  </span>
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="tel:+919289303719" style="color: inherit;">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16" style="margin-bottom: -5px;">
+                      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg> +91 98334 44242
+                  </span>
+                </a>
+              </td>
+              <td style="text-align: right;width: 50%;background-color: #0065b1!important; color: white!important; padding: 5px 40px 5px 40px!important;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" style="margin-bottom: -5px;">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>&nbsp;&nbsp;  
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16" style="margin-bottom: -5px;">
+                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                </svg>&nbsp;&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16" style="margin-bottom: -5px;">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>&nbsp;&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" style="margin-bottom: -5px;">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                </svg>&nbsp;&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16" style="margin-bottom: -5px;">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+              </td>
+            </tr>
+          </table>
+          
+
+
+          <table id="mobile-layout" style="width:100%;background-color: #0065b1!important; color: white!important;padding: 5px 5px 5px 5px; font-size: small;">
+            <tr>
+              <td style="text-align: left;width: 50%; background-color: #0065b1!important; color: white!important; font-size: small;">
+                <a href="mailto:info@national-carriers.com" style="color: inherit;">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16" style="margin-bottom: -5px;">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg> info@national-carriers.com
+                  </span>
+                </a>
+              </td>
+              <td style="text-align: right; width: 50%; background-color: #0065b1!important; color: white!important;font-size: small;">
+                <a href="tel:+919289303719" style="color: inherit;">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16" style="margin-bottom: -5px;">
+                      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg> +91 98334 44242<br>+91 22 62364133
+                  </span>
+                </a>
+              </td>
+            </tr>
+          </table>
+          
+          
+          
+          <!-- sid added -->
+          
           <div class="elementor-inner">
             <div class="elementor-section-wrap">
               <section
@@ -2828,12 +2959,21 @@ transport nepal, road transport bhutan bangladesh">
                                           <rs-module id="rev_slider_18_1" style="" data-version="6.5.25">
                                             <rs-slides>
                                               <!-- <rs-slide style="position: absolute;" data-key="rs-40" data-title="Slide" data-anim="o:outin;" data-in="o:0;sx:0.85;sy:0.85;" data-out="x:100%;"> -->
-                                              <iframe src="assets/vid.html" alt="" style="
+                                              <iframe id="desktop-layout" src="assets/vid.html" alt="" style="
                                                     position: absolute;
                                                     top: 0;
                                                     left: 0;
                                                     z-index: 1;
                                                   " title="58_1-1-copyright" width="1920" height="960"
+                                                class="rev-slidebg tp-rs-img rs-lazyload"
+                                                data-lazyload="assets/vid.html" data-parallax="off"
+                                                data-no-retina=""></iframe>
+                                                <iframe id="mobile-layout" src="assets/vid_mob.html" alt="" style="
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    z-index: 1;
+                                                  " title="58_1-1-copyright" width="1920" height="5000px"
                                                 class="rev-slidebg tp-rs-img rs-lazyload"
                                                 data-lazyload="assets/vid.html" data-parallax="off"
                                                 data-no-retina=""></iframe>
@@ -3083,11 +3223,11 @@ transport nepal, road transport bhutan bangladesh">
                                                     class="sc_icons sc_icons_decoration sc_icons_size_large sc_align_center">
                                                     <div
                                                       class="sc_icons_columns_wrap sc_item_columns trx_addons_columns_wrap columns_padding_bottom">
-                                                      <div class="trx_addons_column-1_4 trx_addons_column-1_2-tablet">
+                                                      <div class="trx_addons_column-1_3 trx_addons_column-1_2-tablet">
                                                         <div class="sc_icons_item sc_icons_item_linked with_more">
-                                                          <div class="sc_icons_icon sc_icon_type_ icon-gl-12334">
-                                                            <span class="sc_icon_type_ icon-gl-12334"></span>
-                                                          </div>
+                                                          <div>
+                                                            <img src="assets/container.png" style="width: 40%;" alt="">
+                                                          </div><br>
                                                           <div class="sc_icons_item_details">
                                                             <h4 class="sc_icons_item_title">
                                                               <a href="services/land-transport-logistics/index.htm">
@@ -3111,11 +3251,11 @@ transport nepal, road transport bhutan bangladesh">
                                                           </div>
                                                         </div>
                                                       </div>
-                                                      <div class="trx_addons_column-1_4 trx_addons_column-1_2-tablet">
+                                                      <div class="trx_addons_column-1_3 trx_addons_column-1_2-tablet">
                                                         <div class="sc_icons_item sc_icons_item_linked with_more">
-                                                          <div class="sc_icons_icon sc_icon_type_ icon-gl-12333">
-                                                            <span class="sc_icon_type_ icon-gl-12333"></span>
-                                                          </div>
+                                                          <div>
+                                                            <img src="assets/rail.png" style="width: 40%;" alt="">
+                                                          </div><br>
                                                           <div class="sc_icons_item_details">
                                                             <h4 class="sc_icons_item_title">
                                                               <a href="services/rail-transport-logistics/index.htm">
@@ -3136,11 +3276,11 @@ transport nepal, road transport bhutan bangladesh">
                                                           </div>
                                                         </div>
                                                       </div>
-                                                      <div class="trx_addons_column-1_4 trx_addons_column-1_2-tablet">
+                                                      <div class="trx_addons_column-1_3 trx_addons_column-1_2-tablet">
                                                         <div class="sc_icons_item sc_icons_item_linked with_more">
-                                                          <div class="sc_icons_icon sc_icon_type_ icon-gl-12333">
-                                                            <span class="sc_icon_type_ icon-gl-12333"></span>
-                                                          </div>
+                                                          <div>
+                                                            <img src="assets/cargo-ship.png" style="width: 40%;" alt="">
+                                                          </div><br>
                                                           <div class="sc_icons_item_details">
                                                             <h4 class="sc_icons_item_title">
                                                               <a href="services/sea-transportation/index.htm">
@@ -3161,14 +3301,12 @@ transport nepal, road transport bhutan bangladesh">
                                                           </div>
                                                         </div>
                                                       </div>
-                                                      <div class="trx_addons_column-1_4 trx_addons_column-1_2-tablet">
+                                                      <div class="trx_addons_column-1_3 trx_addons_column-1_2-tablet">
                                                         <div class="sc_icons_item sc_icons_item_linked with_more">
                                                           <a href="services/marine-transport-logistics/index.htm">
-                                                            <div
-                                                              class="sc_icons_icon sc_icon_type_ icon-source-optimization">
-                                                              <span
-                                                                class="sc_icon_type_ icon-source-optimization"></span>
-                                                            </div>
+                                                            <div>
+                                                              <img src="assets/air-freight.png" style="width: 40%;" alt="">
+                                                            </div><br>
                                                           </a>
                                                           <div class="sc_icons_item_details">
                                                             <h4 class="sc_icons_item_title">
@@ -3189,11 +3327,11 @@ transport nepal, road transport bhutan bangladesh">
                                                           </div>
                                                         </div>
                                                       </div>
-                                                      <div class="trx_addons_column-1_4 trx_addons_column-1_2-tablet">
+                                                      <div class="trx_addons_column-1_3 trx_addons_column-1_2-tablet">
                                                         <div class="sc_icons_item sc_icons_item_linked with_more">
-                                                          <div class="sc_icons_icon sc_icon_type_ icon-gl-12335">
-                                                            <span class="sc_icon_type_ icon-gl-12335"></span>
-                                                          </div>
+                                                          <div>
+                                                            <img src="assets/storage-stacks.png" style="width: 40%;" alt="">
+                                                          </div><br>
                                                           <div class="sc_icons_item_details">
                                                             <h4 class="sc_icons_item_title">
                                                               <a href="services/warehouse-services/index.htm">
@@ -3218,11 +3356,11 @@ transport nepal, road transport bhutan bangladesh">
                                                       </div>
 
 
-                                                      <div class="trx_addons_column-1_4 trx_addons_column-1_2-tablet">
+                                                      <div class="trx_addons_column-1_3 trx_addons_column-1_2-tablet">
                                                         <div class="sc_icons_item sc_icons_item_linked with_more">
-                                                          <div class="sc_icons_icon sc_icon_type_ icon-gl-12331">
-                                                            <span class="sc_icon_type_ icon-gl-12331"></span>
-                                                          </div>
+                                                          <div>
+                                                            <img src="assets/custom-clearance.png" style="width: 40%;" alt="">
+                                                          </div><br>
                                                           <div class="sc_icons_item_details">
                                                             <h4 class="sc_icons_item_title">
                                                               <a href="services/customs-clearance/index.htm">
@@ -3392,12 +3530,10 @@ transport nepal, road transport bhutan bangladesh">
                                     <div class="elementor-widget-container">
                                       <div class="sc_title sc_title_default">
                                         <span
-                                          class="sc_item_subtitle sc_title_subtitle sc_item_subtitle_above sc_item_title_style_default">What
-                                          we Do</span>
+                                          class="sc_item_subtitle sc_title_subtitle sc_item_subtitle_above sc_item_title_style_default">National Carriers Corporation Since 1972</span>
                                         <h1
                                           class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag">
-                                          <span class="sc_item_title_text">High level of provisioned
-                                            services</span>
+                                          <span class="sc_item_title_text">About us</span>
                                         </h1>
                                       </div>
                                     </div>
@@ -3443,10 +3579,9 @@ transport nepal, road transport bhutan bangladesh">
                                     data-widget_type="trx_sc_button.default">
                                     <div class="elementor-widget-container">
                                       <div class="sc_item_button sc_button_wrap">
-                                        <a href="contact-us/index.htm"
+                                        <a href="about-us/"
                                           class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left"><span
-                                            class="sc_button_text"><span class="sc_button_title">Contact
-                                              Us</span></span></a>
+                                            class="sc_button_text"><span class="sc_button_title">Know More</span></span></a>
                                       </div>
                                     </div>
                                   </div>
@@ -3481,251 +3616,7 @@ transport nepal, road transport bhutan bangladesh">
                           </div>
                         </div>
                       </section>
-                      <section
-                        class="elementor-section elementor-top-section elementor-element elementor-element-d7d1859 elementor-section-full_width elementor-section-content-middle scheme_dark elementor-reverse-mobile elementor-section-height-default elementor-section-height-default sc_fly_static"
-                        data-id="d7d1859" data-element_type="section"
-                        data-settings='{"background_background":"classic"}'>
-                        <div class="elementor-container elementor-column-gap-no">
-                          <div class="elementor-row">
-                            <div
-                              class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f99d98c sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
-                              data-id="f99d98c" data-element_type="column">
-                              <div class="elementor-column-wrap elementor-element-populated">
-                                <div class="elementor-widget-wrap">
-                                  <div
-                                    class="elementor-element elementor-element-57ded4f sc_fly_static elementor-widget elementor-widget-spacer"
-                                    data-id="57ded4f" data-element_type="widget" data-widget_type="spacer.default">
-                                    <div class="elementor-widget-container">
-                                      <div class="elementor-spacer">
-                                        <div class="elementor-spacer-inner"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="elementor-element elementor-element-2d2a410 sc_fly_static elementor-widget elementor-widget-trx_sc_testimonials"
-                                    data-id="2d2a410" data-element_type="widget" id="testimonials-home-3"
-                                    data-widget_type="trx_sc_testimonials.default">
-                                    <div class="elementor-widget-container">
-                                      <div id="testimonials-home-3_sc" class="sc_testimonials sc_testimonials_list">
-                                        <div id="testimonials-home-3_sc_outer"
-                                          class="sc_testimonials_slider sc_item_slider slider_swiper_outer slider_outer slider_outer_nocontrols slider_outer_nopagination slider_outer_nocentered slider_outer_overflow_hidden slider_outer_one">
-                                          <div id="testimonials-home-3_sc_swiper"
-                                            data-slides-per-view-breakpoints='{"999999":1}'
-                                            class="slider_container swiper-slider-container slider_swiper slider_noresize slider_nocontrols slider_nopagination slider_nocentered slider_overflow_hidden slider_one"
-                                            data-slides-space="30" data-effect="slide" data-slides-min-width="290"
-                                            data-pagination="bullets" data-direction="horizontal" data-mouse-wheel="0"
-                                            data-autoplay="1" data-loop="1" data-free-mode="0" data-slides-centered="0"
-                                            data-slides-overflow="0">
-                                            <div class="slides slider-wrapper swiper-wrapper sc_item_columns_1">
-                                              <div class="slider-slide swiper-slide">
-                                                <div data-post-id="19296"
-                                                  class="sc_testimonials_item sc_item_container post_container">
-                                                  <div class="sc_testimonials_item_content">
-                                                    <p>
-                                                      I have been using
-                                                      National Carriers
-                                                      Corporation for my
-                                                      import shipments, and I
-                                                      couldn't be happier.
-                                                      Their expertise in
-                                                      customs clearance and
-                                                      documentation has made
-                                                      the process smooth and
-                                                      hassle-free. Their
-                                                      dedicated team goes
-                                                      above and beyond to
-                                                      ensure our shipments
-                                                      arrive on time, and
-                                                      their customer service
-                                                      is exceptional. Thank
-                                                      you, NCC!
-                                                    </p>
-                                                  </div>
-                                                  <div class="sc_testimonials_item_author">
-                                                    <div class="sc_testimonials_item_author_data">
-                                                      <h4 class="sc_testimonials_item_author_title">
-                                                        Sarah Patel
-                                                      </h4>
-                                                      <div class="sc_testimonials_item_author_subtitle">
-                                                        Importer
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div class="slider-slide swiper-slide">
-                                                <div data-post-id="19297"
-                                                  class="sc_testimonials_item sc_item_container post_container">
-                                                  <div class="sc_testimonials_item_content">
-                                                    <p>
-                                                      National Carriers
-                                                      Corporation has been our
-                                                      trusted logistics
-                                                      partner for years. Their
-                                                      road transportation
-                                                      services have played a
-                                                      vital role in
-                                                      maintaining our
-                                                      inventory levels and
-                                                      meeting customer
-                                                      demands. Their fleet is
-                                                      well-maintained, and
-                                                      their drivers are
-                                                      reliable and
-                                                      professional. We
-                                                      appreciate their
-                                                      commitment to quality
-                                                      service and recommend
-                                                      them without hesitation.
-                                                    </p>
-                                                  </div>
-                                                  <div class="sc_testimonials_item_author">
-                                                    <div class="sc_testimonials_item_author_data">
-                                                      <h4 class="sc_testimonials_item_author_title">
-                                                        Rajesh Singh
-                                                      </h4>
-                                                      <div class="sc_testimonials_item_author_subtitle">
-                                                        Owner of Retail Mart
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div class="slider-slide swiper-slide">
-                                                <div data-post-id="19298"
-                                                  class="sc_testimonials_item sc_item_container post_container">
-                                                  <div class="sc_testimonials_item_content">
-                                                    <p>
-                                                      National Carriers
-                                                      Corporation has been an
-                                                      invaluable partner in
-                                                      optimizing our supply
-                                                      chain. Their logistics
-                                                      consulting services have
-                                                      helped us streamline our
-                                                      operations, reduce
-                                                      costs, and improve
-                                                      overall efficiency.
-                                                      Their industry
-                                                      knowledge, attention to
-                                                      detail, and customized
-                                                      solutions have made a
-                                                      significant impact on
-                                                      our business. We highly
-                                                      recommend their
-                                                      expertise to anyone
-                                                      looking to enhance their
-                                                      logistics processes.
-                                                      <span class="MtFg0" lang="en" tabindex="0" role="button"
-                                                        data-term-type="sl" data-sl="en" data-tl="ru">choice </span>of
-                                                      vehicles and the
-                                                      preparation of financial
-                                                      documentation. I was
-                                                      also pleased with the
-                                                      business approach.
-                                                    </p>
-                                                  </div>
-                                                  <div class="sc_testimonials_item_author">
-                                                    <div class="sc_testimonials_item_author_data">
-                                                      <h4 class="sc_testimonials_item_author_title">
-                                                        David Thompson
-                                                      </h4>
-                                                      <div class="sc_testimonials_item_author_subtitle">
-                                                        Supply Chain Manager
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <!-- /.sc_testimonials -->
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="elementor-element elementor-element-ee0dc52 sc_fly_static elementor-widget elementor-widget-spacer"
-                                    data-id="ee0dc52" data-element_type="widget" data-widget_type="spacer.default">
-                                    <div class="elementor-widget-container">
-                                      <div class="elementor-spacer">
-                                        <div class="elementor-spacer-inner"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="elementor-element elementor-element-6d8ccb5 sc_fly_static elementor-widget elementor-widget-trx_sc_slider_controls"
-                                    data-id="6d8ccb5" data-element_type="widget"
-                                    data-widget_type="trx_sc_slider_controls.default">
-                                    <div class="elementor-widget-container">
-                                      <div
-                                        class="sc_slider_controls sc_slider_controls_default slider_pagination_style_bullets sc_align_left"
-                                        data-slider-id="testimonials-home-3" data-style="default"
-                                        data-pagination-style="bullets">
-                                        <div class="slider_controls_wrap">
-                                          <div class="slider_pagination_wrap"></div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="elementor-element elementor-element-b6663e6 sc_fly_static elementor-widget elementor-widget-spacer"
-                                    data-id="b6663e6" data-element_type="widget" data-widget_type="spacer.default">
-                                    <div class="elementor-widget-container">
-                                      <div class="elementor-spacer">
-                                        <div class="elementor-spacer-inner"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0c8cbba sc_layouts_column_align_center sc_layouts_column sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
-                              data-id="0c8cbba" data-element_type="column"
-                              data-settings='{"background_background":"classic"}'>
-                              <div class="elementor-column-wrap elementor-element-populated">
-                                <div class="elementor-widget-wrap">
-                                  <div
-                                    class="elementor-element elementor-element-8d024f1 sc_height_huge sc_fly_static elementor-widget elementor-widget-spacer"
-                                    data-id="8d024f1" data-element_type="widget" data-widget_type="spacer.default">
-                                    <div class="elementor-widget-container">
-                                      <div class="elementor-spacer">
-                                        <div class="elementor-spacer-inner"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="elementor-element elementor-element-ba7f259 elementor-view-stacked elementor-widget__width-auto play_center elementor-shape-circle sc_fly_static elementor-widget elementor-widget-icon"
-                                    data-id="ba7f259" data-element_type="widget" data-widget_type="icon.default">
-                                    <div class="elementor-widget-container">
-                                      <div class="elementor-icon-wrapper">
-                                        <!-- <a class="elementor-icon" href="#go-video5">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="12.24" height="16.583"
-                                            viewbox="0 0 12.24 16.583">
-                                            <path
-                                              d="M17.57,7.966,6.119.07A.395.395,0,0,0,5.5.394V16.188a.395.395,0,0,0,.619.325l11.451-7.9a.395.395,0,0,0,0-.65Z"
-                                              transform="translate(-5.5 0)"></path>
-                                          </svg>
-                                        </a> -->
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div
-                                    class="elementor-element elementor-element-556a8d2 sc_height_huge sc_fly_static elementor-widget elementor-widget-spacer"
-                                    data-id="556a8d2" data-element_type="widget" data-widget_type="spacer.default">
-                                    <div class="elementor-widget-container">
-                                      <div class="elementor-spacer">
-                                        <div class="elementor-spacer-inner"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
+                     
                       <section
                         class="elementor-section elementor-top-section elementor-element elementor-element-30aef32 elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static"
                         data-id="30aef32" data-element_type="section">
@@ -3928,7 +3819,7 @@ transport nepal, road transport bhutan bangladesh">
                                                           People
                                                         </div>
                                                         <div class="sc_skills_item">
-                                                          <div class="sc_skills_total" data-start="0" data-stop="100+"
+                                                          <div class="sc_skills_total" data-start="0" data-stop="120+"
                                                             data-step="1" data-max="100" data-speed="15"
                                                             data-duration="1500" data-ed="+" data-style="odometer">
                                                             <span class="sc_skills_digits"><span
@@ -3971,7 +3862,7 @@ transport nepal, road transport bhutan bangladesh">
                                                 data-widget_type="text-editor.default">
                                                 <div class="elementor-widget-container">
                                                   <div class="elementor-text-editor elementor-clearfix">
-                                                    Workplaces in our company.
+                                                    <!-- Workplaces in our company. -->
                                                   </div>
                                                 </div>
                                               </div>
@@ -3989,29 +3880,41 @@ transport nepal, road transport bhutan bangladesh">
                                                 data-id="f432a4f" data-element_type="widget"
                                                 data-widget_type="trx_sc_skills.default">
                                                 <div class="elementor-widget-container">
-                                                  <div
-                                                    class="sc_skills sc_skills_counter_extra sc_skills_counter_style_odometer sc_align_left"
-                                                    data-type="counter">
+                                                  <div class="sc_skills sc_skills_counter_extra sc_skills_counter_style_odometer sc_align_left" data-type="counter">
                                                     <div class="sc_skills_column trx_addons_column-1_1">
-                                                      <div class="sc_skills_item_wrap sc_skills_item_icon_position_top">
-                                                        <div class="sc_skills_item_title">
-                                                          World Offices
+                                                        <div class="sc_skills_item_wrap sc_skills_item_icon_position_top">
+                                                            <div class="sc_skills_item_title">
+                                                                Offices
+                                                            </div>
+                                                            <div class="sc_skills_item">
+                                                                <div class="sc_skills_total" data-start="0" data-stop="12" data-step="1" data-max="12" data-speed="15" data-duration="1500" data-ed="+"
+                                                                    data-style="odometer">
+                                                                    <span class="sc_skills_digits">
+                                                                        <span class="sc_skills_digit">
+                                                                            <span class="sc_skills_digit_placeholder">0</span>
+                                                                            <span class="sc_skills_digit_wrap">
+                                                                                <span class="sc_skills_digit_ribbon">
+                                                                                    <span class="sc_skills_digit_value">0</span>
+                                                                                </span>
+                                                                            </span>
+                                                                        </span>
+                                                                        <span class="sc_skills_digit" style="margin-left: -15px;">
+                                                                            <span class="sc_skills_digit_placeholder">0</span>
+                                                                            <span class="sc_skills_digit_wrap">
+                                                                                <span class="sc_skills_digit_ribbon">
+                                                                                    <span class="sc_skills_digit_value">0</span>
+                                                                                </span>
+                                                                                
+                                                                            </span>
+                                                                        </span><span
+                                                                        class="sc_skills_unit">+</span>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="sc_skills_item">
-                                                          <div class="sc_skills_total" data-start="0" data-stop="10"
-                                                            data-step="1" data-max="10" data-speed="15"
-                                                            data-duration="1500" data-ed="+" data-style="odometer">
-                                                            <span class="sc_skills_digits"><span
-                                                                class="sc_skills_digit"><span
-                                                                  class="sc_skills_digit_placeholder">8</span><span
-                                                                  class="sc_skills_digit_wrap"><span
-                                                                    class="sc_skills_digit_ribbon"><span
-                                                                      class="sc_skills_digit_value">0</span></span></span></span></span>
-                                                          </div>
-                                                        </div>
-                                                      </div>
                                                     </div>
-                                                  </div>
+                                                </div>
+                                                
                                                 </div>
                                               </div>
                                               <div
@@ -4030,7 +3933,7 @@ transport nepal, road transport bhutan bangladesh">
                                                 data-widget_type="text-editor.default">
                                                 <div class="elementor-widget-container">
                                                   <div class="elementor-text-editor elementor-clearfix">
-                                                    Work all over the world.
+                                                    <!-- Workplaces. -->
                                                   </div>
                                                 </div>
                                               </div>
@@ -4076,179 +3979,217 @@ transport nepal, road transport bhutan bangladesh">
                         data-id="f35d2cd" data-element_type="section"
                         data-settings='{"background_background":"classic"}'></section>
 
-                      <section
-                        class="elementor-section elementor-top-section elementor-element elementor-element-24cf4ea elementor-section-full_width elementor-section-height-default elementor-section-height-default sc_fly_static"
-                        data-id="24cf4ea" data-element_type="section">
-                        <div class="elementor-container elementor-column-gap-no">
-                          <div class="elementor-row">
-                            <div
-                              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9a41888 sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
-                              data-id="9a41888" data-element_type="column">
-                              <div class="elementor-column-wrap elementor-element-populated">
-                                <div class="elementor-widget-wrap">
-                                  <div
-                                    class="elementor-element elementor-element-4e2d2de map-extra-height sc_fly_static elementor-widget elementor-widget-trx_sc_googlemap"
-                                    data-id="4e2d2de" data-element_type="widget"
-                                    data-widget_type="trx_sc_googlemap.default">
-                                    <div class="elementor-widget-container">
-                                      <div id="sc_googlemap_1608749690_wrap" class="sc_googlemap_wrap">
-                                        <div id="sc_googlemap_1608749690"
-                                          class="sc_item_content sc_map sc_googlemap sc_googlemap_default trx_addons_inline_1595952934"
-                                          data-zoom="16" data-center="51.50343,-0.109" data-style="extra"
-                                          data-cluster-icon="">
-                                          <iframe width="100%" height="600" frameborder="0" scrolling="no"
-                                            marginheight="0" marginwidth="0"
-                                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%20HUBTOWN%20SOLAORISOpp,%20Teli%20Gali,%20Vijay%20Nagar,%20Andheri%20East,%20Mumbai,%20Maharashtra%20400053+(National%20Carriers%20Coorperation)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">Find
-                                            Population on Map</a></iframe>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <section
-                                    class="elementor-section elementor-inner-section elementor-element elementor-element-3d4c3dd form-position-abs elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static"
-                                    data-id="3d4c3dd" data-element_type="section">
-                                    <div class="elementor-container elementor-column-gap-no">
-                                      <div class="elementor-row">
-                                        <div
-                                          class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-efd20b3 sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
-                                          data-id="efd20b3" data-element_type="column">
-                                          <div class="elementor-column-wrap">
-                                            <div class="elementor-widget-wrap"></div>
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-47f6692 scheme_default sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
-                                          data-id="47f6692" data-element_type="column"
-                                          data-settings='{"background_background":"classic"}'>
-                                          <!-- <div class="elementor-column-wrap elementor-element-populated">
-                                            <div class="elementor-widget-wrap"> -->
-                                          <!-- <div
-                                                class="elementor-element elementor-element-38f3eb2 sc_fly_static elementor-widget elementor-widget-trx_sc_title"
-                                                data-id="38f3eb2" data-element_type="widget"
-                                                data-widget_type="trx_sc_title.defau  lt">
-                                                <div class="elementor-widget-container">
-                                                  <div class="sc_title sc_title_default">
-                                                    <span
-                                                      class="sc_item_subtitle sc_title_subtitle sc_item_subtitle_above sc_item_title_style_default">Contact
-                                                      Us</span>
-                                                    <h2
-                                                      class="sc_item_title sc_title_title sc_item_title_style_default">
-                                                      <span class="sc_item_title_text">Have Questions?
-                                                        <br />Get in
-                                                        touch!</span>
-                                                    </h2>
-                                                  </div>
-                                                </div>
-                                              </div> -->
-                                          <!-- <div
-                                                class="elementor-element elementor-element-3f058a8 sc_height_tiny sc_fly_static elementor-widget elementor-widget-spacer"
-                                                data-id="3f058a8" data-element_type="widget"
-                                                data-widget_type="spacer.default">
-                                                <div class="elementor-widget-container">
-                                                  <div class="elementor-spacer">
-                                                    <div class="elementor-spacer-inner"></div>
-                                                  </div>
-                                                </div>
-                                              </div> -->
-                                          <!-- <div
-                                                class="elementor-element elementor-element-359b6c6 btn_accent_3 sc_fly_static elementor-widget elementor-widget-trx_sc_contact_form_7"
-                                                data-id="359b6c6" data-element_type="widget"
-                                                data-widget_type="trx_sc_contact_form_7.default"> -->
-                                          <!-- <div class="elementor-widget-container">
-                                                  <div role="form" class="wpcf7" id="wpcf7-f1395-p17219-o1" lang="en-US"
-                                                    dir="ltr"> -->
-                                          <!-- <div class="screen-reader-response">
-                                                      <p role="status" aria-live="polite" aria-atomic="true"></p>
-                                                      <ul></ul>
-                                                    </div> -->
-                                          <!-- <form action="/#wpcf7-f1395-p17219-o1" method="post"
-                                                      class="wpcf7-form init" novalidate="novalidate"
-                                                      data-status="init">
-                                                      <div style="display: none">
-                                                        <input type="hidden" name="_wpcf7" value="1395" />
-                                                        <input type="hidden" name="_wpcf7_version" value="5.6" />
-                                                        <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                                                        <input type="hidden" name="_wpcf7_unit_tag"
-                                                          value="wpcf7-f1395-p17219-o1" />
-                                                        <input type="hidden" name="_wpcf7_container_post"
-                                                          value="17219" />
-                                                        <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                                                      </div>
-                                                      <div class="form-style-7">
-                                                        <div class="columns_wrap">
-                                                          <div class="column-1_2">
-                                                            <span class="style-line"><span
-                                                                class="wpcf7-form-control-wrap"
-                                                                data-name="your-name"><input type="text"
-                                                                  name="your-name" value="" size="40"
-                                                                  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                                  aria-required="true" aria-invalid="false"
-                                                                  placeholder="Name" /></span></span>
-                                                          </div>
-                                                          <div class="column-1_2">
-                                                            <span class="style-line"><span
-                                                                class="wpcf7-form-control-wrap"
-                                                                data-name="your-last-name"><input type="text"
-                                                                  name="your-last-name" value="" size="40"
-                                                                  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                                  aria-required="true" aria-invalid="false"
-                                                                  placeholder="Last Name" /></span></span>
-                                                          </div>
-                                                        </div>
-                                                        <!-- <div class="columns_wrap margin-bottom">
-                                                          <div class="column-1_2">
-                                                            <span class="style-line"><span
-                                                                class="wpcf7-form-control-wrap"
-                                                                data-name="your-email"><input type="email"
-                                                                  name="your-email" value="" size="40"
-                                                                  class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                                                  aria-required="true" aria-invalid="false"
-                                                                  placeholder="Email" /></span></span>
-                                                          </div>
-                                                          <div class="column-1_2">
-                                                            <span class="style-line"><span
-                                                                class="wpcf7-form-control-wrap"
-                                                                data-name="residence"><select name="residence"
-                                                                  class="wpcf7-form-control wpcf7-select"
-                                                                  aria-invalid="false">
-                                                                  <option value="Select Residence">
-                                                                    Select
-                                                                    Residence
-                                                                  </option>
-                                                                  <option value="Select Residence 2">
-                                                                    Select
-                                                                    Residence
-                                                                    2
-                                                                  </option>
-                                                                  <option value="Select Residence 3">
-                                                                    Select
-                                                                    Residence
-                                                                    3
-                                                                  </option>
-                                                                  <option value="Select Residence 4">
-                                                                    Select
-                                                                    Residence
-                                                                    4
-                                                                  </option>
-                                                                </select></span></span>
-                                                          </div>
-                                                        </div> -->
-                                          <!-- <p>
-                                                          <input type="submit" value="Get In Touch"
-                                                            class="wpcf7-form-control has-spinner wpcf7-submit" />
-                                                        </p>
-                                                      </div>
-                                                      <div class="wpcf7-response-output" aria-hidden="true"></div>
-                                                    </form> -->
-                                        </div>
-                                      </div>
-                                    </div>
-                                </div>
-                              </div>
+                        <div style="width: 100%;background-color: white;">
+<br><br><br>
+                          <style>
+                            /* Global Styles */
+                           
+                    
+                            /* Container Styles */
+                            .container {
+                                display: flex;
+                                flex-wrap: wrap;
+                                width: 80%;
+                                background-color: #ffffff;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+                            }
+                    
+                            /* Column Styles */
+                            .column {
+                                flex: 1;
+                            }
+                    
+                            /* Left Column Styles (Map) */
+                            .left-column {
+                                background-color: #f2f2f2;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                    
+                            .map-container {
+                                width: 100%;
+                            }
+                    
+                            .map {
+                                width: 100%;
+                                height: 300px;
+                                border: none;
+                            }
+                    
+                            /* Right Column Styles (Contact Information) */
+                            .right-column {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                            }
+                    
+                            .contact-info { 
+                                margin-top: 20px;
+                                padding: 0px 50px;
+                            }
+                    
+                            /* Additional Styles */
+                            h2 {
+                                color: #333;
+                                margin-bottom: 20px;
+                            }
+                    
+                            p {
+                                color: #666;
+                                margin: 10px 0;
+                            }
+                        </style>
+                        <div class="container">
+                            <!-- Left Column: Google Maps -->
+                            <div id="desktop-layout" class="column map-container left-column" style="margin-left: -15px;">
+                               
+                                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.40015723673!2d72.83240247587712!3d19.13395345014934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b624145721af%3A0xa527760de5c73586!2sRaheja%20Plaza%2C%20Industrial%20Area%2C%20Andheri%20West%2C%20Mumbai%2C%20Maharashtra%20400102!5e0!3m2!1sen!2sin!4v1694959282585!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
+                    
+                            <!-- Right Column: Contact Information -->
+                            <div class="column right-column">
+                              <h2>How to Find Us !</h2>
+                                <div class="contact-info">
+                                    <p><strong>Office Address:</strong>National Carriers Corporation Industrial Area, Andheri West, Mumbai, Maharashtra 400102</p>
+                                    <p><strong>Mobile Number:</strong> +91 98334 44242<br>+91 22 62364133</p>
+                                    <p><strong>E-Mail:</strong> info@national-carriers.com</p>
+                                    <!-- Add more contact details as needed -->
+                                </div>
+                            </div>
+                        </div>
+<br><br><br>
+                        </div><br>
+                        <div style="width: 100%;height: 50px; background-color: #f2f2f2;">
+                        </div>
+<br><br>
+                      <section>
+
+                        <div class="elementor-widget-container">
+                          <div class="sc_title sc_title_default">
+                            <span
+                              class="sc_item_subtitle sc_title_subtitle sc_align_center sc_item_subtitle_above sc_item_title_style_default">What our Customers say !</span>
+                            <h1
+                              class="sc_item_title sc_title_title sc_align_center sc_item_title_style_default sc_item_title_tag">
+                              <span class="sc_item_title_text">Customer Reviews</span>
+                            </h1>
                           </div>
                         </div>
+                        
+                        
+                        <div class="slider-container">
+                          <div style="padding: 100px;">
+                          <div class="slider">
+                               <div class="review-card">
+                          <img src="assets/clients/Mahindra_Auto.png" style="width: 60%;" alt="Customer 1">
+                          <h5>Mahindra Tractor</h5>
+                          <div class="rating">
+                              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span> <!-- 5 golden stars -->
+                          </div>
+                          <p class="review-text">NCC is an experienced transportation company, and the delivery services are
+                            obviously safe, fast, and reliable. We are proud to have them with us.</p>
+                      </div>
+                  
+                      <!-- Review Card 2 -->
+                     
+                  
+                      <!-- Review Card 3 -->
+                      <div class="review-card">
+                          <img src="assets/clients/atul.png" style="width: 30%;" alt="Customer 2">
+                          <h5>Atul Limited</h5>
+                          <div class="rating">
+                              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span> <!-- 5 golden stars -->
+                          </div>
+                          <p class="review-text">Mr. B.K. Bajoria and his team at National Carriers Corporation have made consistent
+                            efforts to ensure the smooth functioning of our shipments to Bangladesh. They have
+                            the highest recommendation from us.</p>
+                      </div>
+                  
+                      <!-- Review Card 4 -->
+                      <div class="review-card">
+                          <img src="assets/clients/alok.jpg" style="width: 50%;" alt="Customer 3">
+                          <h5>Alok Industries</h5>
+                          <div class="rating">
+                              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span >&#9734;</span> <!-- 3 golden stars and 2 grey stars -->
+                          </div>
+                          <p class="review-text">NCC Company's commitment to freight transportation services is impressive. Their
+                            staff is responsive and knowledgeable, making transportation stress-free.</p>
+                      </div>
+
+                      <div class="review-card">
+                        <img src="assets/clients/Mahindra_Auto.png" style="width: 60%;" alt="Customer 4">
+                        <h5>Mahindra Auto Division</h5>
+                        <div class="rating">
+                            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9734;</span> <!-- 4 golden stars and 1 grey star -->
+                        </div>
+                        <p class="review-text">"National Carriers Corporation has consistently delivered on time and with accuracy.
+                          Mr. B.K. Bajoria's expertise is a game-changer in the industry.</p>
+                    </div>
+                    
+                  
+                      <!-- Review Card 5 -->
+                      <div class="review-card">
+                          <img src="assets/clients/asian-paints-logo.png" style="width: 40%;" alt="Customer 5">
+                          <h5>Asian Paints</h5>
+                          <div class="rating">
+                              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span> <!-- 5 golden stars -->
+                          </div>
+                          <p class="review-text">Our business cooperation with NCC has been very pleasant. Having confidence in
+                            their efficiency and services gives us confidence that our products will be delivered
+                            on time and safely.
+                            </p>
+                      </div>
+                      </div>
+                          </div>
+                      </div>
+                   
                       </section>
+                      <br><br><br>
+
+                      <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const slider = document.querySelector(".slider");
+                            const cards = document.querySelectorAll(".review-card");
+                            let currentIndex = 0;
+                
+                            function updateSlider() {
+                                slider.style.transform = `translateX(-${currentIndex * 300}px)`;
+                                cards.forEach((card, i) => {
+                                    card.classList.remove("active");
+                                    if (i === currentIndex) {
+                                        card.classList.add("active");
+                                    }
+                                });
+                            }
+                
+                            function nextSlide() {
+                                if (currentIndex < cards.length - 3) {
+                                    currentIndex++;
+                                } else {
+                                    currentIndex = 0;
+                                }
+                                updateSlider();
+                            }
+                
+                            function prevSlide() {
+                                if (currentIndex > 0) {
+                                    currentIndex--;
+                                } else {
+                                    currentIndex = cards.length - 3;
+                                }
+                                updateSlider();
+                            }
+                
+                            // Initially, show the first three cards
+                            updateSlider();
+                
+                            // Automatically move to the next slide every 3 seconds
+                            setInterval(nextSlide, 2000);
+                        });
+                    </script>
+
                     </div>
                   </div>
                 </div>
@@ -4265,146 +4206,181 @@ transport nepal, road transport bhutan bangladesh">
   </div>
   </div>
   <a id="footer_skip_link_anchor" class="globallogistics_skip_link_anchor" href="#"></a>
-  <footer class="footer_wrap footer_custom footer_custom_17273 footer_custom_footer-main-2">
-    <div data-elementor-type="cpt_layouts" data-elementor-id="17273" class="elementor elementor-17273">
-      <div class="elementor-inner">
-        <div class="elementor-section-wrap">
-          <section
-            class="elementor-section elementor-top-section elementor-element elementor-element-ce47a87 elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static"
-            data-id="ce47a87" data-element_type="section" data-settings='{"background_background":"classic"}'>
-            <div class="elementor-container elementor-column-gap-extended">
-              <div class="elementor-row">
-                <div
-                  class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6c2d68f sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
-                  data-id="6c2d68f" data-element_type="column">
-                  <div class="elementor-column-wrap elementor-element-populated">
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-50a10be sc_height_large sc_fly_static elementor-widget elementor-widget-spacer"
-                        data-id="50a10be" data-element_type="widget" data-widget_type="spacer.default">
-                        <div class="elementor-widget-container">
-                          <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-2febce2 sc_layouts_hide_on_mobile sc_fly_static elementor-widget elementor-widget-spacer"
-                        data-id="2febce2" data-element_type="widget" data-widget_type="spacer.default">
-                        <div class="elementor-widget-container">
-                          <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <br><br><br>
+      <div
+        class="sc_layouts_item elementor-element elementor-element-a0ae546 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_title"
+        data-id="a0ae546" data-element_type="widget" data-widget_type="trx_sc_layouts_title.default">
+        <div class="elementor-widget-container">
+          <div class="sc_layouts_title sc_align_center with_content without_image without_tint">
+            <div class="sc_layouts_title_content">
+              <div class="sc_layouts_title_title">
+                <h1 class="sc_layouts_title_caption">
+                  No One Knows Bangladesh Like We Do!
+                </h1>
               </div>
             </div>
-          </section>
-          <section
-            class="elementor-section elementor-top-section elementor-element elementor-element-c76bac7 sc_layouts_row sc_layouts_row_type_compact scheme_dark elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static"
-            data-id="c76bac7" data-element_type="section" data-settings='{"background_background":"classic"}'>
-            <div class="elementor-container elementor-column-gap-extended">
-              <div class="elementor-row">
-                <div
-                  class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-689451f sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
-                  data-id="689451f" data-element_type="column">
-                  <div class="elementor-column-wrap elementor-element-populated">
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-7c1863a sc_fly_static elementor-widget elementor-widget-trx_sc_title"
-                        data-id="7c1863a" data-element_type="widget" data-widget_type="trx_sc_title.default">
-                        <div class="elementor-widget-container">
-                          <div class="sc_title sc_title_default">
-                            <h2 class="sc_item_title sc_title_title sc_item_title_style_default">
-                              <span class="sc_item_title_text">No One knows<br />Bangladesh
-                                like We Do!</span>
-                            </h2>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer_wrap footer_custom footer_custom_8919 footer_custom_footer-main">
+        <img src="./assets/BLD2017-Footer-Trees.png" style="width: 100%;" alt="">
+        <div data-elementor-type="cpt_layouts" data-elementor-id="8919" class="elementor elementor-8919">
+          <div class="elementor-inner">
+            <div class="elementor-section-wrap">
+              <section
+                class="elementor-section elementor-top-section elementor-element elementor-element-086c413 sc_layouts_row sc_layouts_row_type_compact scheme_dark elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static"
+                data-id="086c413" data-element_type="section" data-settings='{"background_background":"classic"}'>
+                <div class="elementor-container elementor-column-gap-extended">
+                  <div class="elementor-row">
+                    <div
+                      class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-a93a278 sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
+                      data-id="a93a278" data-element_type="column">
+                      <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-ea36529 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_logo"
+                            data-id="ea36529" data-element_type="widget" data-widget_type="trx_sc_layouts_logo.default">
+                            <div class="elementor-widget-container">
+                              <a href="../index.htm"
+                                class="sc_layouts_logo sc_layouts_logo_default trx_addons_inline_334678059"><img
+                                  class="logo_image" src="./wp-content/uploads/2022/04/logo.png" srcset="
+                                      ../wp-content/uploads/2022/04/logo%402x.png 2x
+                                    " alt="Globallogistics" width="156" height="49" /></a>
+                                    <br><br>
+                                    <h3 class="sc_item_title sc_title_title sc_item_title_style_default">
+                                      <span class="sc_item_title_text" style="color: white!important;">Our Transportation Services <br> Pan India | Bangladesh | Nepal | Bhutan </span>
+                                    </h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><br><br>
+                    <div
+                      class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-d695112 sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
+                      data-id="d695112" data-element_type="column">
+                      <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-6fde68a sc_fly_static elementor-widget elementor-widget-trx_sc_title"
+                            data-id="6fde68a" data-element_type="widget" data-widget_type="trx_sc_title.default">
+                            <div class="elementor-widget-container">
+                              <div class="sc_title sc_title_default">
+                                <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag">
+                                  <span class="sc_item_title_text">Office</span>
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-a755d43 sc_fly_static elementor-widget elementor-widget-spacer"
+                            data-id="a755d43" data-element_type="widget" data-widget_type="spacer.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-spacer">
+                                <div class="elementor-spacer-inner"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-17ae5bb sc_fly_static elementor-widget elementor-widget-text-editor"
+                            data-id="17ae5bb" data-element_type="widget" data-widget_type="text-editor.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-text-editor elementor-clearfix">
+                                <p>
+                                  Door No. 305/ 52 C,<br> Bharat Chambers, Baroda Street,<br> Chinch Bunder, Masjid (E),
+                                  Mumbai,<br>Maharashtra 400009
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-9b67105 sc_fly_static elementor-widget elementor-widget-text-editor"
+                            data-id="9b67105" data-element_type="widget" data-widget_type="text-editor.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-text-editor elementor-clearfix">
+                                <p>
+                                  <a class="underline_anim" href="mailto: info@national-carriers.com">
+                                    info@national-carriers.com</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-4b62018 sc_layouts_hide_on_mobile sc_fly_static elementor-widget elementor-widget-spacer"
+                            data-id="4b62018" data-element_type="widget" data-widget_type="spacer.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-spacer">
+                                <div class="elementor-spacer-inner"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-e911c07 sc_fly_static elementor-widget elementor-widget-text-editor"
+                            data-id="e911c07" data-element_type="widget" data-widget_type="text-editor.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-text-editor elementor-clearfix">
+                                <span class="trx_addons_alter_text"><a href="tel:+91 98334 44242<br>+91 22 62364133"> +91 98334 44242<br>+91 22 62364133</a></span>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div
-                  class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5ab7dc9 sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
-                  data-id="5ab7dc9" data-element_type="column">
-                  <div class="elementor-column-wrap elementor-element-populated">
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-209ba40 sc_fly_static elementor-widget elementor-widget-trx_sc_title"
-                        data-id="209ba40" data-element_type="widget" data-widget_type="trx_sc_title.default">
-                        <div class="elementor-widget-container">
-                          <div class="sc_title sc_title_default">
-                            <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag">
-                              <span class="sc_item_title_text">Address</span>
-                            </h6>
+                    <div
+                      class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-235aa5d sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
+                      data-id="235aa5d" data-element_type="column">
+                      <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-6beb293 sc_fly_static elementor-widget elementor-widget-trx_sc_title"
+                            data-id="6beb293" data-element_type="widget" data-widget_type="trx_sc_title.default">
+                            <div class="elementor-widget-container">
+                              <div class="sc_title sc_title_default">
+                                <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag">
+                                  <span class="sc_item_title_text">Newsletter</span>
+                                </h6>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-48783e6 sc_fly_static elementor-widget elementor-widget-spacer"
-                        data-id="48783e6" data-element_type="widget" data-widget_type="spacer.default">
-                        <div class="elementor-widget-container">
-                          <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-241c189 sc_fly_static elementor-widget elementor-widget-text-editor"
-                        data-id="241c189" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                          <div class="elementor-text-editor elementor-clearfix">
-                            <p>
-                              Door No. 305/ 52 C, Bharat Chambers, Baroda Street, Chinch Bunder, Masjid (E), Mumbai,
-                              Maharashtra 400009
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-f1eaaf3 sc_fly_static elementor-widget elementor-widget-spacer"
-                        data-id="f1eaaf3" data-element_type="widget" data-widget_type="spacer.default">
-                        <div class="elementor-widget-container">
-                          <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-9da4d89 sc_fly_static elementor-widget elementor-widget-trx_sc_socials"
-                        data-id="9da4d89" data-element_type="widget" data-widget_type="trx_sc_socials.default">
-                        <div class="elementor-widget-container">
-                          <div class="sc_socials sc_socials_default sc_align_none">
-                            <div class="socials_wrap sc_item_content">
-                              <a target="_blank" href="https://www.facebook.com/nationalcarrierscorporation0
-                              " class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span
-                                  class="social_icon social_icon_facebook-1" style=""><span
-                                    class="icon-facebook-1"></span></span></a><a target="_blank"
-                                href="https://twitter.com/NCC_pvtltd"
-                                class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span
-                                  class="social_icon social_icon_twitter-new" style=""><span
-                                    class="icon-twitter-new"></span></span></a><a target="_blank"
-                                href="https://www.linkedin.com/company/national-carriers-corporation0/?viewAsMember=true" " class="
-                                social_item social_item_style_icons sc_icon_type_icons social_item_type_icons">
-                                <span class="social_icon social_icon_-new" style="">
-                                  <span class="icon-linkedin-new">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                      class="bi bi-linkedin" viewBox="0 0 16 16">
-                                      <path
-                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                                    </svg>
-                                  </span>
-                                </span>
-                              </a>
-                              <a target="_blank" href="https://www.instagram.com/nationalcarrierscorporation/
-                                    "
-                                class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span
-                                  class="social_icon social_icon_instagram" style=""><span
-                                    class="icon-instagram"></span></span></a>
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-685b924 sc_fly_static elementor-widget elementor-widget-shortcode"
+                            data-id="685b924" data-element_type="widget" data-widget_type="shortcode.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-shortcode">
+                                <script>
+                                  (function () {
+                                    window.mc4wp = window.mc4wp || {
+                                      listeners: [],
+                                      forms: {
+                                        on: function (evt, cb) {
+                                          window.mc4wp.listeners.push({
+                                            event: evt,
+                                            callback: cb,
+                                          });
+                                        },
+                                      },
+                                    };
+                                  })();
+                                </script>
+                                <!-- Mailchimp for WordPress v4.8.7 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+                                <form id="style-9" class="mc4wp-form mc4wp-form-461" method="post" data-id="461"
+                                  data-name="Subscribe">
+                                  <div class="mc4wp-form-fields">
+                                    <input type="email" name="EMAIL" placeholder="Enter Your Email Address" />
+                                    <button>Subscribe</button>
+                                    <input name="i_agree_privacy_policy" value="1" required=""
+                                      type="checkbox" /><label>I agree to the
+                                      <a href="./privacy-policy/index.htm" target="_blank">Privacy Policy</a>.</label>
+                                  </div>
+                                  <label style="display: none !important">Leave this field empty if you're human:
+                                    <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1"
+                                      autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp"
+                                    value="1683553458" /><input type="hidden" name="_mc4wp_form_id" value="461" /><input
+                                    type="hidden" name="_mc4wp_form_element_id" value="style-9" />
+                                  <div class="mc4wp-response"></div>
+                                </form>
+                                <!-- / Mailchimp for WordPress Plugin -->
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -4412,177 +4388,100 @@ transport nepal, road transport bhutan bangladesh">
                     </div>
                   </div>
                 </div>
-                <div
-                  class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-4aa54a4 sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
-                  data-id="4aa54a4" data-element_type="column">
-                  <div class="elementor-column-wrap elementor-element-populated">
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-39080dd sc_fly_static elementor-widget elementor-widget-trx_sc_title"
-                        data-id="39080dd" data-element_type="widget" data-widget_type="trx_sc_title.default">
-                        <div class="elementor-widget-container">
-                          <div class="sc_title sc_title_default">
-                            <h6 class="sc_item_title sc_title_title sc_item_title_style_default sc_item_title_tag">
-                              <span class="sc_item_title_text">Say Hello</span>
-                            </h6>
+              </section>
+              <section
+                class="elementor-section elementor-top-section elementor-element elementor-element-531224a sc_layouts_row sc_layouts_row_type_compact scheme_dark elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static"
+                data-id="531224a" data-element_type="section" data-settings='{"background_background":"classic"}'>
+                <div class="elementor-container elementor-column-gap-extended">
+                  <div class="elementor-row">
+                    <div
+                      class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0ffdd5f sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
+                      data-id="0ffdd5f" data-element_type="column">
+                      <div class="elementor-column-wrap elementor-element-populated">
+                        <div class="elementor-widget-wrap">
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-f969f94 sc_layouts_hide_on_notebook sc_layouts_hide_on_tablet sc_layouts_hide_on_mobile sc_fly_static elementor-widget elementor-widget-spacer"
+                            data-id="f969f94" data-element_type="widget" data-widget_type="spacer.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-spacer">
+                                <div class="elementor-spacer-inner"></div>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-176252c sc_fly_static elementor-widget elementor-widget-spacer"
-                        data-id="176252c" data-element_type="widget" data-widget_type="spacer.default">
-                        <div class="elementor-widget-container">
-                          <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-0e762ff sc_height_medium sc_fly_static elementor-widget elementor-widget-spacer"
+                            data-id="0e762ff" data-element_type="widget" data-widget_type="spacer.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-spacer">
+                                <div class="elementor-spacer-inner"></div>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-b7a4933 sc_fly_static elementor-widget elementor-widget-text-editor"
-                        data-id="b7a4933" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                          <div class="elementor-text-editor elementor-clearfix">
-                            <p>
-                              <a class="underline_anim" href="mailto: info@national-carriers.com">
-                                info@national-carriers.com</a>
-                            </p>
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-6be0fb3 elementor-widget-divider--view-line sc_fly_static elementor-widget elementor-widget-divider"
+                            data-id="6be0fb3" data-element_type="widget" data-widget_type="divider.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-divider">
+                                <span class="elementor-divider-separator">
+                                </span>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-16c9596 sc_fly_static elementor-widget elementor-widget-spacer"
-                        data-id="16c9596" data-element_type="widget" data-widget_type="spacer.default">
-                        <div class="elementor-widget-container">
-                          <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-f333d12 sc_layouts_hide_on_mobile sc_fly_static elementor-widget elementor-widget-spacer"
+                            data-id="f333d12" data-element_type="widget" data-widget_type="spacer.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-spacer">
+                                <div class="elementor-spacer-inner"></div>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-395a993 sc_fly_static elementor-widget elementor-widget-text-editor"
-                        data-id="395a993" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                          <div class="elementor-text-editor elementor-clearfix">
-                            <span class="trx_addons_alter_text"><a href="tel:+022 4910 9999">022 4910 9999</a></span>
+                          <table style="table-layout: fixed;width: 100%;">
+                            <tr>
+                              <td>
+                                <div
+                            class= "sc_layouts_item elementor-element elementor-element-0e43ad2 sc_fly_static elementor-widget elementor-widget-text-editor"
+                            data-id="0e43ad2" data-element_type="widget" data-widget_type="text-editor.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-text-editor elementor-clearfix">
+                                <a href="https://www.national-carriers.com/" target="_blank" rel="noopener">NCC</a>
+                                © 2023. All Rights Reserved.
+                              </div>
+                            </div>
+                          </div>
+                              </td>
+                              <td style="text-align: right;">
+                                <span class="custom_links_list_item">
+                                  <a class="custom_links_list_item_link" href="./Terms-Conditions/index.htm"><span
+                                      class="custom_links_list_item_title" style="color: white;">Terms and Conditions</span></a>
+                                  </span>&nbsp;&nbsp;&nbsp;
+                                <span class="custom_links_list_item">
+                                  <a class="custom_links_list_item_link" href="./privacy-policy/index.htm"><span
+                                      class="custom_links_list_item_title" style="color: white;">Privacy Policy</span></a>
+                                  </span>
+                              </td>
+                            </tr>
+                          </table>
+                          
+                          <div
+                            class="sc_layouts_item elementor-element elementor-element-211e25b sc_fly_static elementor-widget elementor-widget-spacer"
+                            data-id="211e25b" data-element_type="widget" data-widget_type="spacer.default">
+                            <div class="elementor-widget-container">
+                              <div class="elementor-spacer">
+                                <div class="elementor-spacer-inner"></div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </section>
             </div>
-          </section>
-          <section
-            class="elementor-section elementor-top-section elementor-element elementor-element-63de2a4 sc_layouts_row sc_layouts_row_type_compact scheme_dark elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static"
-            data-id="63de2a4" data-element_type="section" data-settings='{"background_background":"classic"}'>
-            <div class="elementor-container elementor-column-gap-extended">
-              <div class="elementor-row">
-                <div
-                  class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9866fe0 sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
-                  data-id="9866fe0" data-element_type="column">
-                  <div class="elementor-column-wrap elementor-element-populated">
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-e2b4867 sc_layouts_hide_on_notebook sc_layouts_hide_on_tablet sc_layouts_hide_on_mobile sc_fly_static elementor-widget elementor-widget-spacer"
-                        data-id="e2b4867" data-element_type="widget" data-widget_type="spacer.default">
-                        <div class="elementor-widget-container">
-                          <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-f5d93bb sc_height_medium sc_fly_static elementor-widget elementor-widget-spacer"
-                        data-id="f5d93bb" data-element_type="widget" data-widget_type="spacer.default">
-                        <div class="elementor-widget-container">
-                          <div class="elementor-spacer">
-                            <div class="elementor-spacer-inner"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-f3a9cdc elementor-widget-divider--view-line sc_fly_static elementor-widget elementor-widget-divider"
-                        data-id="f3a9cdc" data-element_type="widget" data-widget_type="divider.default">
-                        <div class="elementor-widget-container">
-                          <div class="elementor-divider">
-                            <span class="elementor-divider-separator">
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section
-            class="elementor-section elementor-top-section elementor-element elementor-element-85e5c8f sc_layouts_row sc_layouts_row_type_narrow scheme_dark elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default sc_fly_static"
-            data-id="85e5c8f" data-element_type="section" data-settings='{"background_background":"classic"}'>
-            <div class="elementor-container elementor-column-gap-extended">
-              <div class="elementor-row">
-                <div
-                  class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c227ad1 sc_layouts_column_align_left sc_layouts_column sc-mobile_layouts_column_align_center sc_layouts_column sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
-                  data-id="c227ad1" data-element_type="column">
-                  <div class="elementor-column-wrap elementor-element-populated">
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-e2a1f94 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_menu"
-                        data-id="e2a1f94" data-element_type="widget" data-widget_type="trx_sc_layouts_menu.default">
-                        <div class="elementor-widget-container">
-                          <nav
-                            class="sc_layouts_menu sc_layouts_menu_default sc_layouts_menu_dir_horizontal menu_hover_zoom_line"
-                            data-animation-in="fadeIn" data-animation-out="fadeOut">
-                            <ul id="sc_layouts_menu_1422795032" class="sc_layouts_menu_nav">
-                              <li id="menu-item-19706"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17219 current_page_item menu-item-19706">
-                                <a href="../index.htm" aria-current="page"><span>Home</span></a>
-                              </li>
-                              <li id="menu-item-19706"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17219 current_page_item menu-item-19706">
-                                <a href="/about-us/index.htm" aria-current="page"><span>About Us</span></a>
-                              </li>
-                              <li id="menu-item-19706"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17219 current_page_item menu-item-19706">
-                                <a href="../index.htm" aria-current="page"><span>Services</span></a>
-                              </li>
-                              <!-- <li id="menu-item-17584"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17584">
-                                    <a href="our-services/index.htm"><span>Services</span></a>
-                                  </li> -->
-                            </ul>
-                          </nav>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3d407e3 sc_layouts_column_align_right sc_layouts_column sc-mobile_layouts_column_align_center sc_layouts_column sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static"
-                  data-id="3d407e3" data-element_type="column">
-                  <div class="elementor-column-wrap elementor-element-populated">
-                    <div class="elementor-widget-wrap">
-                      <div
-                        class="sc_layouts_item elementor-element elementor-element-1222819 sc_fly_static elementor-widget elementor-widget-text-editor"
-                        data-id="1222819" data-element_type="widget" data-widget_type="text-editor.default">
-                        <div class="elementor-widget-container">
-                          <div class="elementor-text-editor elementor-clearfix">
-                            <a href="https://www.national-carriers.com/" target="_blank" rel="noopener">NCC</a>
-                            © 2023. All Rights Reserved.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          </div>
         </div>
-      </div>
-    </div>
-  </footer>
+      </footer>
   <!-- /.footer_wrap -->
   </div>
   </div>
