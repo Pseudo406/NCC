@@ -4,11 +4,11 @@
 		<engineLink>https://wordpress.org/</engineLink>
 		<homePageLink>https://globallogistics.themerex.net</homePageLink>
 		<apis>
-			<api name="WordPress" blogID="1" preferred="true" apiLink="https://globallogistics.themerex.net/xmlrpc.php" />
-			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://globallogistics.themerex.net/xmlrpc.php" />
-			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://globallogistics.themerex.net/xmlrpc.php" />
-			<api name="Blogger" blogID="1" preferred="false" apiLink="https://globallogistics.themerex.net/xmlrpc.php" />
-				<api name="WP-API" blogID="1" preferred="false" apiLink="https://globallogistics.themerex.net/wp-json/" />
+			<api name="WordPress" blogID="1" preferred="true" apiLink="https://www.national-carriers.com/xmlrpc.php" />
+			<api name="Movable Type" blogID="1" preferred="false" apiLink="https://www.national-carriers.com/xmlrpc.php" />
+			<api name="MetaWeblog" blogID="1" preferred="false" apiLink="https://www.national-carriers.com/xmlrpc.php" />
+			<api name="Blogger" blogID="1" preferred="false" apiLink="https://www.national-carriers.com/xmlrpc.php" />
+				<api name="WP-API" blogID="1" preferred="false" apiLink="https://www.national-carriers.com/wp-json/" />
 			</apis>
 	</service>
 </rsd>
